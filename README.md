@@ -23,7 +23,7 @@ To write a program to predict the profit of a city using the linear regression m
 ## Developed by: P PARTHIBAN
 ## RegisterNumber:  212223230145
 
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -77,7 +77,7 @@ def gradientDescent(X,y,theta,alpha,num_iters):
 theta,J_history = gradientDescent(X,y,theta,0.01,1500)
 print("h(x)="+str(round(theta[0,0],2))+"+"+str(round(theta[1,0],2))+"x1")
 
-#Testing the implementation
+ #Testing the implementation
 plt.plot(J_history)
 plt.xlabel("Iteration")
 plt.ylabel("$J(\Theta)$")
@@ -92,7 +92,7 @@ plt.xticks(np.arange(5,30,step=5))
 plt.yticks(np.arange(-5,30,step=5))
 plt.xlabel("Population of City (10,000s)")
 plt.ylabel("Profit($10,000")
-plt.title("Profit Prediction"
+plt.title("Profit Prediction")
 
 def predict(x,theta):
   """
@@ -125,10 +125,6 @@ print("For population = 70,000, we predict a profit of $"+str(round(predict2,0))
 ![image](https://github.com/harini1006/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497405/61aad46d-b2d2-47d7-a7d7-ece05043cf30)
 ### Profit for the Population 70,000 :
 ![image](https://github.com/harini1006/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497405/70f9f953-a1da-4225-be06-19b89e9b42fe)
-
-
-## Result:
-
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
